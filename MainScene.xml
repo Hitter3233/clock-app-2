@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="MainScene" extends="Scene">
+
+    <script type="text/brightscript" uri="pkg:/MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/Clock.brs" />
+
+    <children>
+
+        <!-- Background -->
+        <Poster
+            id="background"
+            uri="pkg:/images/background.jpg"
+            width="1920"
+            height="1080"
+            translation="[0,0]"
+        />
+
+        <!-- Time -->
+        <Label
+            id="clockLabel"
+            text=""
+            horizAlign="center"
+            vertAlign="center"
+            width="1920"
+            height="100"
+            translation="[0,0]"
+            color="0xFFFFFFFF"
+            font="font:LargeBoldSystemFont"
+        />
+
+        <!-- Date -->
+        <Label
+            id="dateLabel"
+            text=""
+            horizAlign="center"
+            vertAlign="center"
+            width="1920"
+            height="60"
+            translation="[0,0]"
+            color="0xFFFFFFFF"
+            font="font:MediumSystemFont"
+        />
+
+    </children>
+
+</component>
